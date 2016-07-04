@@ -538,7 +538,10 @@ endif
 
 exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
 
-exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
+" "----------------------------- mat --------------------------------"
+" exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
+exe "hi! Comment"        .s:fmt_none   .s:fg_base01 .s:bg_none
+" "----------------------------- mat --------------------------------"
 "       *Comment         any comment
 
 exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
@@ -606,7 +609,10 @@ elseif  (g:solarized_visibility=="low")
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base02 .s:bg_none
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
 else
-    exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
+" "----------------------------- mat --------------------------------"
+"    exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
+    exe "hi! SpecialKey"     .s:fmt_none  .s:fg_red    .s:bg_none
+" "----------------------------- mat --------------------------------"
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
 endif
 exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
@@ -655,7 +661,10 @@ exe "hi! DiffText"       .s:fmt_none   .s:fg_blue   .s:bg_base02 .s:sp_blue
     endif
 endif
 exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0
-exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
+" "----------------------------- mat --------------------------------"
+"exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
+exe "hi! Conceal"     .s:fmt_none   .s:fg_base01 .s:bg_none
+" "----------------------------- mat --------------------------------"
 exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
 exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
 exe "hi! SpellRare"      .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_cyan
